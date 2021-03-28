@@ -5,7 +5,7 @@ from sklearn.preprocessing import normalize
 from sklearn.manifold import TSNE
 
 
-stocks = pd.read_csv('company-stock-movements-2010-2015-incl.csv', index_col = 0)
+stocks = pd.read_csv('data/SP500_stock.csv', index_col = 0)
 movements = stocks.values
 companies = stocks.index
 

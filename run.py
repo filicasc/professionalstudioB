@@ -17,18 +17,24 @@ stocks = stocks.fillna(0) #pandas version of replacing NaN values to 0
 
 #print(stocks.head(5)) #test stocks dataframe by printing first 5 rows
 
+# create two arrays of values and index (companies)
 movements = stocks.values
 companies = stocks.index
 
+# sklearn's normalize function to convert values into the same scale
 normalized_movements = normalize(movements)
 
+# start an instance of t-SNE, learning rate should be adjusted depending on dataset (50-200)
 model = TSNE(learning_rate = 50)
 
+# apply t-SNE model to normalised array of stock prices
 tsne_features = model.fit_transform(normalized_movements)
 
+# create two more arrays of resulting features to go into x and y coordinates of scatter plot
 xs = tsne_features[:,0]
 ys = tsne_features[:,1]
 
+# create scatter plot
 fig, ax = plt.subplots(figsize = [15, 10])
 plt.scatter(xs, ys, alpha = 0.5)
 

@@ -5,7 +5,7 @@ from sklearn.preprocessing import normalize
 from sklearn.manifold import TSNE
 
 
-stocks = pd.read_csv('data/SP500_stock.csv', index_col = 0)
+stocks = pd.read_csv('../data/SP500_stock.csv', index_col = 0)
 
 stocks['stock_change'] = stocks['close'] - stocks['open'] # Create new column of difference between close and open values
 stocks = stocks.drop(['open','high','low','close','volume'], axis=1) # Drop unnecessary columns
@@ -41,4 +41,4 @@ plt.scatter(xs, ys, alpha = 0.5)
 for x, y, company in zip(xs, ys, companies):
     plt.annotate(company, (x, y), fontsize=9, alpha=0.75)
 plt.tight_layout
-plt.savefig('output/model.png') #temporary fix, this saves output as a png file
+plt.savefig('../output/tsne_model.png') #temporary fix, this saves output as a png file

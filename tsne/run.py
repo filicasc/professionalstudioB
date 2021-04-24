@@ -52,9 +52,6 @@ def help_statement():
 
 if __name__ == '__main__':
 
-    #project_root = dirname(dirname(__file__))
-    #output = join(ROOT_DIR, 'output/tsne_model.png') # set output destination
-
     parser = argparse.ArgumentParser()
     parser.add_argument('data_set', help='Dataset to be processed')
     parser.add_argument('output', help='Output destination')

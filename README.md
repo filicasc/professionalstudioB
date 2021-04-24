@@ -20,5 +20,14 @@ Source article: https://medium.com/analytics-vidhya/machine-learning-for-the-sto
 **Sample Result**  
 ![image](https://github.com/filicasc/professionalstudioB/blob/main/output/tsne_model.png?raw=true)
 
+# UMAP Model
+UMAP documentation: https://umap-learn.readthedocs.io/en/latest/index.html
+
+**Sample Usage (from root directory)**  
+-> python umap/run.py data/SP500_stock.csv output/umap_model.png
+
+**Sample Result**
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model.png?raw=true)
+
 
 

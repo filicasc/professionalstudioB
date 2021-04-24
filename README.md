@@ -18,5 +18,7 @@ Source article: https://medium.com/analytics-vidhya/machine-learning-for-the-sto
 -> python tsne/run.py data/SP500_stock.csv output/tsne_model.png
 
 **Sample Result**  
-![Alt text](/output/tsne_model.jpg?raw=true)
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/tsne_model.png?raw=true)
+
+
 

@@ -43,6 +43,7 @@ def runModel():
     for x, y, company in zip(xs, ys, companies):
         plt.annotate(company, (x, y), fontsize=9, alpha=0.75)
     plt.tight_layout
+    plt.title('t-SNE Projection of SP500 Stocks Dataset', fontsize=24)
     plt.savefig(args.output) #temporary fix, this saves output as a png file
 
 def help_statement():

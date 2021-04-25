@@ -15,7 +15,7 @@ pip install argparse
 Source article: https://medium.com/analytics-vidhya/machine-learning-for-the-stock-market-use-python-to-find-companies-that-behave-similarly-81eceee04f2c
 
 **Sample Usage (from root directory)**  
--> python tsne/run.py data/SP500_stock.csv output/tsne_model.png
+-> python statistics/run_tsne.py data/SP500_stock.csv output/tsne_model.png
 
 **Sample Result**  
 ![image](https://github.com/filicasc/professionalstudioB/blob/main/output/tsne_model.png?raw=true)
@@ -24,7 +24,7 @@ Source article: https://medium.com/analytics-vidhya/machine-learning-for-the-sto
 UMAP documentation: https://umap-learn.readthedocs.io/en/latest/index.html
 
 **Sample Usage (from root directory)**  
--> python umap/run.py data/SP500_stock.csv output/umap_model.png
+-> python statistics/run_umap.py data/SP500_stock.csv output/umap_model.png
 
 **Sample Result**
 ![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model.png?raw=true)

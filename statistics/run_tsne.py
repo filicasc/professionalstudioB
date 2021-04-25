@@ -1,14 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import umap
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import normalize
-from sklearn.preprocessing import StandardScaler
+from sklearn.manifold import TSNE
 import sys
 import argparse
-def runModel():
 
+def runModel():
     stocks = pd.read_csv(args.data_set, index_col = 0)
 
     stocks['stock_change'] = stocks['close'] - stocks['open'] # Create new column of difference between close and open values
@@ -17,35 +15,40 @@ def runModel():
     stocks = stocks.pivot(index='Name', columns='date') # Restructure dataframe
 
     stocks = stocks.fillna(0) #pandas version of replacing NaN values to 0
+    #np.nan_to_num(stocks) # numpy version of replacing NaN values to 0
+
+    #print(stocks.head(5)) #test stocks dataframe by printing first 5 rows
 
     # create two arrays of values and index (companies)
     movements = stocks.values
     companies = stocks.index
-    
+
     # sklearn's normalize function to convert values into the same scale
     normalized_movements = normalize(movements)
 
-    # UMAP application
-    reducer = umap.UMAP()
-    embedding = reducer.fit_transform(normalized_movements)
+    # start an instance of t-SNE, learning rate should be adjusted depending on dataset (50-200)
+    model = TSNE(learning_rate = 50)
+
+    # apply t-SNE model to normalised array of stock prices
+    tsne_features = model.fit_transform(normalized_movements)
 
     # create two more arrays of resulting features to go into x and y coordinates of scatter plot
-    xs = embedding[:,0]
-    ys = embedding[:,1]
+    xs = tsne_features[:,0]
+    ys = tsne_features[:,1]
 
-    #scatter plot
+    # create scatter plot
     fig, ax = plt.subplots(figsize = [15, 10])
-    plt.scatter(xs, ys, alpha=0.5)
+    plt.scatter(xs, ys, alpha = 0.5)
 
     for x, y, company in zip(xs, ys, companies):
         plt.annotate(company, (x, y), fontsize=9, alpha=0.75)
     plt.tight_layout
-    plt.title('UMAP Projection of SP500 Stocks Dataset', fontsize=24)
-    plt.savefig(args.output)
+    plt.title('t-SNE Projection of SP500 Stocks Dataset', fontsize=24)
+    plt.savefig(args.output) #temporary fix, this saves output as a png file
 
 def help_statement():
     print(" ")
-    print("Sample usage (from root): python umap/run.py data/SP500_stock.csv output/umap_model.png")
+    print("Sample usage (from root): python statistics/run_tsne.py data/SP500_stock.csv output/tsne_model.png")
 
 if __name__ == '__main__':
 

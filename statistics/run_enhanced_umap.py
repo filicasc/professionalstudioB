@@ -52,13 +52,15 @@ def runModel():
 
     #scatter plot
     fig, ax = plt.subplots(figsize = [15, 10])
-    plt.scatter(xs, ys, alpha=0.5)
+    scat = plt.scatter(xs, ys, alpha=0.5)
 
     for x, y, company in zip(xs, ys, companies):
         plt.annotate(company, (x, y), fontsize=9, alpha=0.75)
     plt.tight_layout
     plt.title('UMAP Projection of SP500 Stocks Dataset', fontsize=24)
     plt.savefig(args.output)
+
+    #print(len(scat.get_offsets()))
 
 def help_statement():
     print(" ")

@@ -26,12 +26,11 @@ def runModel():
     normalized_movements = normalize(movements)
 
     # UMAP application
-    reducer = umap.UMAP()
-    embedding = reducer.fit_transform(normalized_movements)
+    standard_embedding = umap.UMAP().fit_transform(normalized_movements)
 
     # create two more arrays of resulting features to go into x and y coordinates of scatter plot
-    xs = embedding[:,0]
-    ys = embedding[:,1]
+    xs = standard_embedding[:,0]
+    ys = standard_embedding[:,1]
 
     #scatter plot
     fig, ax = plt.subplots(figsize = [15, 10])

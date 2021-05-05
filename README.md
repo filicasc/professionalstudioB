@@ -26,8 +26,10 @@ UMAP documentation: https://umap-learn.readthedocs.io/en/latest/index.html
 **Sample Usage (from root directory)**  
 -> python statistics/run_umap.py data/SP500_stock.csv output/umap_model.png
 
-**Sample Result**
-![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model.png?raw=true)
+**Sample Results**
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model.png?raw=true)  
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model_test.png?raw=true)
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model_test2.png?raw=true)    
 
 # Enhanced UMAP Model (with HDBSCAN)  
 This model includes the application of HDBSCAN, a density based clustering algorithm. Additional parameters have been included for UMAP to get the dataset down to a number of dimensions small enough for a density based clustering algorithm to make progress.  

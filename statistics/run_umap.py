@@ -46,6 +46,7 @@ def runModel():
     plt.title('UMAP Projection of SP500 Stocks Dataset', fontsize=24)
     plt.savefig(args.output)
 
+
     #print(companies[0],xs[0],ys[0])
     #print(test_list[0])
 
@@ -58,6 +59,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('data_set', help='Dataset to be processed')
     parser.add_argument('output', help='Output destination')
+
 
     #Get and check options
     args = None

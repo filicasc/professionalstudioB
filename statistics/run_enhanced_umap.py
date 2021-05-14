@@ -54,11 +54,17 @@ def runModel():
     fig, ax = plt.subplots(figsize = [15, 10])
     plt.scatter(xs, ys, alpha=0.5)
 
+    temp_list = []
+
     for x, y, company in zip(xs, ys, companies):
         plt.annotate(company, (x, y), fontsize=9, alpha=0.75)
+        temp_list.append([company,x,y])
     plt.tight_layout
     plt.title('UMAP Projection of SP500 Stocks Dataset', fontsize=24)
     plt.savefig(args.output)
+
+    df = pd.DataFrame(temp_list, columns=['Company','X','y'])
+    df.to_csv("output/umap_hdbscan_file.csv", sep=',', index=False)
 
 def help_statement():
     print(" ")

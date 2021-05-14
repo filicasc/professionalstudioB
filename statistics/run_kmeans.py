@@ -5,7 +5,7 @@ from sklearn.preprocessing import normalize
 from sklearn import manifold
 from sklearn.cluster import KMeans
 
-stocks = pd.read_csv('all_stocks_5yr.csv', index_col = 0)
+stocks = pd.read_csv('data/SP500_stock.csv', index_col = 0)
 
 stocks['stock_change'] = stocks['close'] - stocks['open'] # Create new column of difference between close and open values
 stocks = stocks.drop(['open','high','low','close','volume'], axis=1) # Drop unnecessary columns
@@ -33,8 +33,15 @@ ys = transformed[:,1]
 fig, ax = plt.subplots(figsize = [15, 10])
 plt.scatter(xs, ys, alpha = 0.5)
 
+temp_list=[]
+
 for x, y, company in zip(xs, ys, companies):
     plt.annotate(company, (x, y), fontsize=9, alpha=0.75)
+    temp_list.append([company,x,y])
 plt.tight_layout
 plt.title('Kmeans Projection of SP500 Stocks Dataset', fontsize=24)
-plt.savefig('PCA_model.png') #temporary fix, this saves output as a png file
+plt.savefig('output/kmeans_model.png') #temporary fix, this saves output as a png file
+
+df = pd.DataFrame(temp_list, columns=['Company','X','y'])
+df.to_csv("output/kmeans_file.csv", sep=',', index=False)
+

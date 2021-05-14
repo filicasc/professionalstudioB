@@ -17,6 +17,10 @@ Source article: https://medium.com/analytics-vidhya/machine-learning-for-the-sto
 **Sample Usage (from root directory)**  
 -> python statistics/run_tsne.py data/SP500_stock.csv output/tsne_model.png
 
+# PCA Model  
+**Sample Result**
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/pca_model.png?raw=true)
+
 **Sample Result**  
 ![image](https://github.com/filicasc/professionalstudioB/blob/main/output/tsne_model.png?raw=true)
 
@@ -29,7 +33,6 @@ UMAP documentation: https://umap-learn.readthedocs.io/en/latest/index.html
 **Sample Results**
 ![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model.png?raw=true)  
 ![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model_test.png?raw=true)
-![image](https://github.com/filicasc/professionalstudioB/blob/main/output/umap_model_test2.png?raw=true)    
 
 # Enhanced UMAP Model (with HDBSCAN)  
 This model includes the application of HDBSCAN, a density based clustering algorithm. Additional parameters have been included for UMAP to get the dataset down to a number of dimensions small enough for a density based clustering algorithm to make progress.  

@@ -17,12 +17,16 @@ Source article: https://medium.com/analytics-vidhya/machine-learning-for-the-sto
 **Sample Usage (from root directory)**  
 -> python statistics/run_tsne.py data/SP500_stock.csv output/tsne_model.png
 
-# PCA Model  
-**Sample Result**
-![image](https://github.com/filicasc/professionalstudioB/blob/main/output/pca_model.png?raw=true)
-
 **Sample Result**  
-![image](https://github.com/filicasc/professionalstudioB/blob/main/output/tsne_model.png?raw=true)
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/tsne_model.png?raw=true)  
+
+# PCA Model  
+**Sample Result**  
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/pca_model.png?raw=true)  
+
+# K-means Clustering Model  
+**Sample Result**  
+![image](https://github.com/filicasc/professionalstudioB/blob/main/output/kmeans_model.png?raw=true)  
 
 # UMAP Model
 UMAP documentation: https://umap-learn.readthedocs.io/en/latest/index.html

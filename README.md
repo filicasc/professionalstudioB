@@ -62,3 +62,5 @@ If the ground truth labels are not known, this index (also known as Variance Rat
 | t-SNE             | 780.334                 |
 | PCA               | 685.493                 |
 | K-means           | 584.692                 |  
+
+However, the drawback with this measurement is that the index is generally higher for convex clusters than other concepts of clusters, such as density-based clusters like those obtained through DBSCAN (a density-based algorithm we used). Thus, while the index is the highest for UMAP & HDBSCAN, the graph itself is almost identical to a regular UMAP projection.

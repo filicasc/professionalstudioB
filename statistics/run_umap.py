@@ -12,7 +12,7 @@ def runModel():
     stocks = pd.read_csv(args.data_set, index_col = 0)
 
     stocks['stock_change'] = stocks['close'] - stocks['open'] # Create new column of difference between close and open values
-    stocks = stocks.drop(['open','high','low','close','volume'], axis=1) # Drop unnecessary columns
+    stocks = stocks.drop(['open','high','low','close','adj_close','volume'], axis=1) # Drop unnecessary columns
     stocks = stocks.reset_index() 
     stocks = stocks.pivot(index='Name', columns='date') # Restructure dataframe
 
@@ -46,9 +46,8 @@ def runModel():
     plt.title('UMAP Projection of SP500 Stocks Dataset', fontsize=24)
     plt.savefig(args.output)
 
-
-    #print(companies[0],xs[0],ys[0])
-    #print(test_list[0])
+    df = pd.DataFrame(temp_list, columns=['Company','X','y'])
+    df.to_csv("./output/umap_file.csv", sep=',', index=False)
 
 def help_statement():
     print(" ")

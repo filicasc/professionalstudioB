@@ -1,0 +1,91 @@
+Company,Sector,Industry,No. of Employees,Net Income to Common Stakeholders
+A,Healthcare,Diagnostics & Research,16400,810000000
+AAPL,Technology,Consumer Electronics,100000,76311003136
+ABT,Healthcare,Medical Devices,109000,5693000192
+ACN,Technology,Information Technology Services,537000,5457266176
+ADBE,Technology,Software—Infrastructure,22516,5566000128
+ADI,Technology,Semiconductors,15900,1405405952
+ADP,Industrials,Staffing & Employment Services,58000,2471899904
+ADSK,Technology,Software—Application,11500,1208199936
+AKAM,Technology,Software—Infrastructure,8300,589603008
+ALGN,Healthcare,Medical Devices,18975,458132992
+AMAT,Technology,Semiconductor Equipment & Materials,24200,3856999936
+AMD,Technology,Semiconductors,12600,2883000064
+AMZN,Consumer Cyclical,Internet Retail,1271000,26902999040
+ANSS,Technology,Software—Application,4800,460220992
+ANTM,Healthcare,Healthcare Plans,83400,4713999872
+ARNC,Industrials,Specialty Industrial Machinery,13400,-103000000
+ATVI,Communication Services,Electronic Gaming & Multimedia,9500,2311000064
+AVGO,Technology,Semiconductors,21000,3662000128
+BAX,Healthcare,Medical Instruments & Supplies,50000,1068000000
+BDX,Healthcare,Medical Instruments & Supplies,70000,1639000064
+CDNS,Technology,Software—Application,8800,653825024
+CHK,Energy,Oil & Gas E&P,1300,-9756000256
+CI,Healthcare,Healthcare Plans,72226,8438000128
+CMG,Consumer Cyclical,Restaurants,97000,406479008
+CNC,Healthcare,Healthcare Plans,71300,2460999936
+COO,Healthcare,Medical Instruments & Supplies,12000,2248999936
+CRM,Technology,Software—Application,56606,4072000000
+CTAS,Industrials,Specialty Business Services,40000,980628992
+CTXS,Technology,Software—Application,9000,413272000
+DGX,Healthcare,Diagnostics & Research,50000,1794000000
+DHR,Healthcare,Diagnostics & Research,67000,4594999808
+DVA,Healthcare,Medical Care Facilities,67000,791084992
+EBAY,Consumer Cyclical,Internet Retail,12700,2680000000
+EFX,Industrials,Consulting Services,11000,604800000
+EL,Consumer Defensive,Household & Personal Products,48000,1390000000
+EW,Healthcare,Medical Devices,14900,851000000
+FB,Communication Services,Internet Content & Information,60654,33741000704
+FCX,Basic Materials,Copper,24500,1804000000
+FIS,Technology,Information Technology Services,62000,-230000000
+FISV,Technology,Information Technology Services,44000,870000000
+GOOG,Communication Services,Internet Content & Information,139995,51363000320
+GOOGL,Communication Services,Internet Content & Information,139995,51363000320
+GPN,Industrials,Specialty Business Services,24000,637625984
+HCA,Healthcare,Medical Care Facilities,195000,4595999744
+HOLX,Healthcare,Medical Instruments & Supplies,5814,1907000064
+HUM,Healthcare,Healthcare Plans,43000,3721999872
+IDXX,Healthcare,Diagnostics & Research,9300,674206016
+ILMN,Healthcare,Diagnostics & Research,7800,630000000
+INFO,Industrials,Consulting Services,16000,535000000
+INTC,Technology,Semiconductors,110600,18599000064
+INTU,Technology,Software—Application,10600,1747000064
+IQV,Healthcare,Diagnostics & Research,72000,409000000
+ISRG,Healthcare,Medical Instruments & Supplies,8081,1173400064
+KLAC,Technology,Semiconductor Equipment & Materials,10600,1856567040
+LH,Healthcare,Diagnostics & Research,70000,2642899968
+LLY,Healthcare,Drug Manufacturers—General,34690,6092499968
+LRCX,Technology,Semiconductor Equipment & Materials,13100,3460474112
+MA,Financial Services,Credit Services,21000,6545999872
+MCHP,Technology,Semiconductors,18000,333300000
+MDT,Healthcare,Medical Devices,90000,3062000128
+MSFT,Technology,Software—Infrastructure,163000,56014999552
+MSI,Technology,Communication Equipment,18000,949000000
+MTD,Healthcare,Diagnostics & Research,14900,602739008
+MU,Technology,Semiconductors,40000,3196999936
+NFLX,Communication Services,Entertainment,9400,3759043072
+NVDA,Technology,Semiconductors,18975,4332000256
+ORCL,Technology,Software—Infrastructure,135000,12830000128
+PAYX,Industrials,Staffing & Employment Services,15600,1055200000
+PKI,Healthcare,Diagnostics & Research,14000,728097984
+PYPL,Financial Services,Credit Services,26500,4201999872
+QCOM,Technology,Semiconductors,41000,8022000128
+QRVO,Technology,Semiconductors,7900,485264000
+RMD,Healthcare,Medical Instruments & Supplies,7770,457240000
+SBUX,Consumer Cyclical,Restaurants,349000,995800000
+SNPS,Technology,Software—Infrastructure,15036,722630976
+SPGI,Financial Services,Financial Data & Stock Exchanges,23000,2455000064
+SWKS,Technology,Semiconductors,10000,1211000064
+SYK,Healthcare,Medical Devices,43000,1408000000
+TMO,Healthcare,Diagnostics & Research,80000,7923999744
+TXN,Technology,Semiconductors,30000,6144999936
+UHS,Healthcare,Medical Care Facilities,89000,1007846976
+UNH,Healthcare,Healthcare Plans,330000,16883000320
+V,Financial Services,Credit Services,20500,10337000448
+VRSK,Industrials,Consulting Services,8960,712700032
+VRSN,Technology,Software—Infrastructure,907,631126016
+WAT,Healthcare,Diagnostics & Research,7400,521571008
+XL,Consumer Cyclical,Auto Parts,59,-25591000
+XLNX,Technology,Semiconductors,4891,620883008
+ZBH,Healthcare,Medical Devices,20000,-138900000
+ZTS,Healthcare,Drug Manufacturers—Specialty & Generic,11300,1638000000
